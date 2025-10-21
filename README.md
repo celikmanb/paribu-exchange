@@ -1,23 +1,37 @@
-# paribu-exchange
+# Paribu Exchange
 
-This template should help get you started developing with Vue 3 in Vite.
+Modern bir kripto para borsası arayüzü uygulaması. Vue 3, TypeScript ve Tailwind CSS kullanılarak geliştirilmiştir.
+
+## Uygulama Nasıl Çalışır?
+
+Bu uygulama, kripto para piyasalarını görüntülemek ve işlem yapmak için tasarlanmış bir arayüzdür. İşleyişi şu şekildedir:
+
+### 🏗️ Mimari
+- **Vue 3 Composition API** ile modern reaktif bileşenler
+- **Pinia** ile merkezi state yönetimi
+- **TypeScript** ile tip güvenliği
+- **Tailwind CSS** ile responsive tasarım
+- **ApexCharts** ile interaktif grafikler
+
+### 📊 Veri Akışı
+1. **Config Store**: Piyasa yapılandırması, para birimleri ve piyasa gruplarını yönetir
+2. **Market Store**: Seçili piyasa çiftini ve ilgili verileri takip eder
+3. **Ticker Store**: Fiyat verilerini ve grafik serilerini yönetir
+
+### 🎯 Ana Özellikler
+- **Piyasa Listesi**: Kripto para çiftlerini kategorilere göre filtreleme
+- **Trading Panel**: Alım/satım işlemleri için arayüz
+- **24 Saatlik Grafikler**: Fiyat hareketlerini görselleştirme
+- **Dark/Light Mode**: Tema değiştirme özelliği
+- **Responsive Tasarım**: Mobil ve masaüstü uyumlu
+
+### 🔄 Veri Kaynakları
+- Mock API'lerden piyasa yapılandırması ve ticker verileri
+- Paribu CDN'den kripto para ikonları
 
 ## Recommended IDE Setup
 
 [VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Recommended Browser Setup
-
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
 
 ## Customize configuration
 

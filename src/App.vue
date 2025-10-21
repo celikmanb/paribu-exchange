@@ -1,11 +1,16 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import HomeView from './views/HomeView.vue';
+import { useTheme } from './composables/useTheme';
+
+// Initialize theme - useTheme handles all initialization
+useTheme();
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <div class="min-h-screen bg-white dark:bg-gray-900 transition-colors">
+    <HomeView />
+  </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+</style>
